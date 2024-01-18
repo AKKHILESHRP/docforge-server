@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-mongoose.connect("mongodb://0.0.0.0:27017/Docforge")
+mongoose.connect(process.env.MONGO_DB_URL)
 .then(() => console.log("Database connected"))
 .catch((err) => console.error(err))
 
