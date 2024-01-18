@@ -1,7 +1,7 @@
 const documentModel = require("./models/documentModel");
 const io = require("socket.io")(5000, {
   cors: {
-    origin: "https://docforge-client.vercel.app/",
+    origin: "https://docforge-client-igk2ics0w-akkhileshrp.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
