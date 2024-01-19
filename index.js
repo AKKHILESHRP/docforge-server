@@ -1,7 +1,7 @@
 const documentModel = require("./models/documentModel");
 const io = require("socket.io")(5000, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://docforge.netlify.app",
     methods: ["GET", "POST"],
   },
 });
